@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Noto Sans CJK TC;
+}
+
+.container {
+  max-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.room__price {
+  width: 40%;
+  background-image: url(https://images.unsplash.com/photo-1526880792616-4217886b9dc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+  background-size: cover;
+  background-position: center center;
+}
+
+.room__price .room__price__info {
+  padding-top: 90px;
+  padding-left: 10%;
+}
+
+.room__price .room__price__info a {
+  color: #38470B;
+}
+
+.room__price .room__price__btn {
+  padding-top: 600px;
+  text-align: center;
+  color: #38470B;
+}
+
+.room__price .room__price__btn .price {
+  font-size: 36px;
+}
+
+.room__price .room__price__btn span {
+  font-size: 20px;
+}
+
+.room__price .room__price__btn .btn {
+  padding: 8.5px 59px;
+  margin-top: 20px;
+  background-color: #38470B;
+  border: 1px solid #38470B;
+}
+
+.room__price .room__price__btn .btn:hover {
+  background: #151b04;
+}
+
+.room__price .room__price__btn .btn p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.room__price .room__price__btn .change__room__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
+
+.room__price .room__price__btn .change__room__btn .far {
+  color: #38470B;
+  padding: 0px 5px;
+}
+
+.room__content {
+  width: 60%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.room__content .room__name {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.room__content .room__name h2 {
+  font-size: 40px;
+  color: #38470B;
+  padding-top: 107px;
+}
+
+.room__content .room__name p {
+  display: inline-block;
+  font-size: 14px;
+  color: #38470B;
+  padding: 128px 50px 0 50px;
+}
+
+.room__content .room__priceInfo {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 0;
+  padding-top: 30px;
+}
+
+.room__content .room__content__info {
+  padding-top: 30px;
+}
+
+.room__content .room__content__info li {
+  font-size: 14px;
+  color: #38470B;
+  line-height: 1.8;
+}
+
+.room__content .room__iconInfo {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #38470B;
+}
+
+.room__content .room__iconInfo .icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4% 4% 0 4%;
+  width: 40px;
+}
+
+.room__content .room__iconInfo .icon img {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.room__content .room__iconInfo .icon p {
+  font-size: 10px;
+  color: #38470B;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.room__content .room__iconInfo .icon .fas {
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  color: #38470B;
+}
+
+.room__content .room__iconInfo .poolside,
+.room__content .room__iconInfo .surface,
+.room__content .room__iconInfo .kids,
+.room__content .room__iconInfo .view,
+.room__content .room__iconInfo .sofa {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.room__content .room__dateorder {
+  margin-top: 30px;
+}
+
+.room__content .room__dateorder h3 {
+  color: #38470B;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.room__content .room__calendar {
+  border: 1px solid #38470B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.room__content .room__calendar .room__calendar__left,
+.room__content .room__calendar .room__calendar__right {
+  width: 95%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4%;
+}
+
+.room__content .room__calendar .room__calendar__month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.room__content .room__calendar .room__calendar__month .fas,
+.room__content .room__calendar .room__calendar__month .month {
+  color: #38470B;
+  font-size: 16px;
+}
+
+.room__content .room__calendar .room__calendar__month .month {
+  display: inline;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.room__content .room__calendar .room__calendar__table {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.room__content .room__calendar .room__calendar__table th {
+  padding: 10px;
+  color: #888888;
+  border-bottom: 1px solid #888;
+}
+
+.room__content .room__calendar .room__calendar__table td {
+  padding: 10px;
+  color: #cacaca;
+}
+
+.room__content .room__calendar .room__calendar__table .green {
+  color: #38470B;
+  font-size: bold;
+}
+
+.beforeClick {
+  display: none;
+}
+/*# sourceMappingURL=price.css.map */

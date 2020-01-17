@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="css/price_info.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+
+  <title>Hotel Price Info</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="inputLeft">
+      <form>
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input type="text" class="form-control" id="name" aria-describedby="textHelp" placeholder="請輸入大名">
+
+          <label for="number">電話</label>
+          <input type="tel" class="form-control" id="number" aria-describedby="textHelp" placeholder="請輸入電話">
+
+          <label for="checkIn">入住時間</label>
+          <input type="text" class="form-control" id="checkIn" aria-describedby="textHelp">
+
+          <label for="checkOut">退房時間</label>
+          <input type="text" class="form-control" id="checkOut" aria-describedby="textHelp">
+
+          <p class="info" id="checkDate"></p>
+          <!-- 使用 id JS 顯示正確的幾天幾晚的數字 -->
+        </div>
+
+      </form>
+      <div class="bill">
+        <p class="billText">總計</p>
+        <p class="billPrice">$1,380</p>
+      </div>
+
+      <button type="button" class="btn">確認送出</button>
+      <p class="btnInfo">此預約系統僅預約功能，並不會對您進行收費</p>
+    </div>
+    <!-- inputLeft end -->
+
+    <div class="roomInfo">
+      <i class="fas fa-times"></i>
+      <div class="roomTitle">
+        <h3>Single Room</h3>
+      </div>
+      <!-- roomTitle end -->
+
+      <div class="roomContent">
+        <p>1 人・ 單人床・附早餐・ 衛浴 1 間・18 平方公尺</p>
+        <p>平日（一～四）價格：1380 / 假日（五〜日）價格：1500</p>
+      </div>
+      <!-- roomContent end -->
+
+      <div class="roomIcons">
+        <div class="icon breakfast">
+          <img src="img/icon/surface1.svg" alt="">
+          <p>早餐</p>
+        </div>
+
+        <div class="icon wifi">
+          <img src="img/icon/surface-wifi.svg" alt="">
+          <p>Wifi</p>
+        </div>
+
+        <div class="icon telephone">
+          <img src="img/icon/telephone.svg" alt="">
+          <p>電話</p>
+        </div>
+
+        <div class="icon icebox">
+          <img src="img/icon/icebox.svg" alt="">
+          <p>冰箱</p>
+        </div>
+
+        <div class="icon pets">
+          <img src="img/icon/pets.svg" alt="">
+          <p>寵物</p>
+        </div>
+
+        <div class="icon nosmoking">
+          <img src="img/icon/nosmoke.svg" alt="">
+          <p>禁菸</p>
+        </div>
+
+        <div class="icon aircondition">
+          <img src="img/icon/aircondition.svg" alt="">
+          <p>空調</p>
+        </div>
+      </div>
+      <!-- roomIcons end -->
+
+      <div class="roomOrderInfo">
+        <h3>訂房資訊</h3>
+        <ul>
+          <li>・入住時間：最早 15：00，最晚 21：00；退房時間：10：00，請自行確認行程安排。</li>
+          <li>・平日定義週一至週四；假日定義週五至週日及國定假日。</li>
+          <li>・好室旅店全面禁止吸菸。</li>
+          <li>・若您有任何問題，歡迎撥打 02-25754366 ( 服務時間 週一至週六 10:00 - 18:00 )。</li>
+        </ul>
+
+      </div>
+      <!-- roomOrderInfo end -->
+
+      <div class="roomOrderTitle">
+        <h3>預約流程</h3>
+      </div>
+      <!-- roomOrderTitle end -->
+
+      <div class="roomOrderProcess">
+
+        <div class="box box1">
+          <div class="boxTitle">
+            <img src="img/icon/order.svg" alt="">
+          </div>
+          <div class="boxContent">
+            <p>送出線上預約單</p>
+          </div>
+        </div>
+        <!-- box1 end -->
+        <div class="box box2">
+          <div class="boxTitle">
+            <img src="img/icon/icons8-search_chat.svg" alt="">
+          </div>
+          <div class="boxContent">
+            <p>系統立即回覆是否預訂成功</p>
+            <p>並以簡訊發送訂房通知</p>
+            <p>(若未收到簡訊請來電確認)</p>
+          </div>
+        </div>
+        <!-- box2 end -->
+
+        <div class="box box3">
+          <div class="boxTitle">
+            <img src="img/icon/credit_card.svg" alt="">
+          </div>
+          <div class="boxContent">
+            <p>入住當日憑訂房通知</p>
+            <p>以現金或刷卡付款即可</p>
+            <p>(僅接受VISA、JCB、銀聯卡)</p>
+          </div>
+        </div>
+        <!-- box3 end -->
+
+      </div>
+
+    </div>
+  </div>
+  <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script>
+    $(function () {
+      $("#checkIn").datepicker();
+      $("#checkOut").datepicker();
+    });
+  </script>
+</body>
+
+</html>

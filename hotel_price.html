@@ -123,148 +123,9 @@
         <h3>空房狀態查詢</h3>
       </div>
       <div class="room__calendar">
-        <div class="room__calendar__left">
-          <div class="room__calendar__month">
-            <a href="#" class="arrow_left"><i class="fas fa-angle-left"></i></a>
-            <p class="month">August 2019</p>
-          </div>
-          <table class="room__calendar__table">
-
-            <tr>
-              <th>Sun</th>
-              <th>Mon</th>
-              <th>Tue</th>
-              <th>Mar</th>
-              <th>Thu</th>
-              <th>Fri</th>
-              <th>Sat</th>
-            </tr>
-
-            <tr>
-              <td>28</td>
-              <td>29</td>
-              <td>30</td>
-              <td>31</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-            </tr>
-
-            <tr>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-              <td>10</td>
-            </tr>
-
-            <tr>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-              <td>14</td>
-              <td>15</td>
-              <td>16</td>
-              <td>17</td>
-            </tr>
-
-            <tr>
-              <td>18</td>
-              <td>19</td>
-              <td class="green">20</td>
-              <td class="green">21</td>
-              <td class="green">22</td>
-              <td class="green">23</td>
-              <td class="green">24</td>
-            </tr>
-
-            <tr>
-              <td class="green">25</td>
-              <td class="green">26</td>
-              <td class="green">27</td>
-              <td class="green">28</td>
-              <td class="green">29</td>
-              <td class="green">30</td>
-              <td>1</td>
-            </tr>
-
-          </table>
-
-        </div>
-        <div class="room__calendar__right">
-          <div class="room__calendar__month">
-            <p class="month">September 2019</p>
-            <a href="#" class="arrow_right"><i class="fas fa-angle-right"></i></a>
-          </div>
-          <table class="room__calendar__table">
-
-            <tr>
-              <th>Sun</th>
-              <th>Mon</th>
-              <th>Tue</th>
-              <th>Mar</th>
-              <th>Thu</th>
-              <th>Fri</th>
-              <th>Sat</th>
-            </tr>
-
-            <tr>
-              <td class="green">2</td>
-              <td class="green">3</td>
-              <td class="green">4</td>
-              <td class="green">5</td>
-              <td class="green">6</td>
-              <td class="green">7</td>
-              <td class="green">8</td>
-            </tr>
-
-            <tr>
-              <td class="green">9</td>
-              <td class="green">10</td>
-              <td class="green">11</td>
-              <td class="green">12</td>
-              <td class="green">13</td>
-              <td class="green">14</td>
-              <td class="green">15</td>
-            </tr>
-
-            <tr>
-              <td class="green">16</td>
-              <td class="green">17</td>
-              <td class="green">18</td>
-              <td class="green">19</td>
-              <td class="green">20</td>
-              <td class="green">21</td>
-              <td class="green">22</td>
-            </tr>
-
-            <tr>
-              <td class="green">23</td>
-              <td class="green">24</td>
-              <td class="green">25</td>
-              <td class="green">26</td>
-              <td class="green">27</td>
-              <td class="green">28</td>
-              <td class="green">29</td>
-            </tr>
-
-            <tr>
-              <td class="green">30</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-            </tr>
-
-          </table>
-        </div>
+        <div class="room__calendar__left" id="datepicker1"></div>
+        <div class="room__calendar__right" id="datepicker2"></div>
       </div>
-
-
     </div>
 
     <div class="room__price">
@@ -446,6 +307,12 @@
       $("#checkIn").datepicker();
       $("#checkOut").datepicker();
     });
+    $( function() {
+    $( "#datepicker1" ).datepicker({ minDate: -20, maxDate: "+1M +10D" });
+  } );
+  $( function() {
+    $( "#datepicker2" ).datepicker({ minDate: -20, maxDate: "+1M +10D" });
+  } );
   </script>
 
 </body>

@@ -228,6 +228,8 @@ a {
   .room__calendar {
     border: 1px solid $primary-color;
     display: flex;
+    justify-content: space-around;
+    padding: 1%;
 
     // 橫排並排
     @include pad {
@@ -237,60 +239,6 @@ a {
       margin-bottom: 10%;
     }
 
-    .room__calendar__left,
-    .room__calendar__right {
-      width: 100%;
-      max-width: 100%;
-      flex-direction: column;
-      // 使月曆直向排列
-      // 參考文章:https://wcc723.github.io/css/2017/07/21/css-flex/
-      padding: 2%;
-      flex-wrap: wrap;
-    }
-
-    .room__calendar__month {
-      display: flex;
-
-      .fas,
-      .month {
-        color: $primary-color;
-        font-size: 16px;
-
-      }
-
-      .month {
-        display: inline;
-        flex: auto;
-        // 相關文章參考 https://wcc723.github.io/css/2017/07/21/css-flex/
-        text-align: center;
-        font-weight: bold;
-
-      }
-    }
-
-    .room__calendar__table {
-      width: 100%;
-      max-width: 100%;
-      margin-top: 20px;
-      text-align: center;
-      font-size: 14px;
-
-      th {
-        padding: 3%;
-        color: #888888;
-        border-bottom: 1px solid #888;
-      }
-
-      td {
-        padding: 3%;
-        color: #cacaca;
-      }
-
-      .green {
-        color: $primary-color;
-        font-size: bold;
-      }
-    }
   }
 }
 
