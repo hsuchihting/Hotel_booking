@@ -1,0 +1,148 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: -webkit-gradient(linear, right top, left top, from(#333), color-stop(rgba(51, 51, 51, 0.6)), to(#333)), url(../img/house/photo-1507149833265-60c372daea22.jpeg);
+  background: -webkit-linear-gradient(right, #333, rgba(51, 51, 51, 0.6), #333), url(../img/house/photo-1507149833265-60c372daea22.jpeg);
+  background: -o-linear-gradient(right, #333, rgba(51, 51, 51, 0.6), #333), url(../img/house/photo-1507149833265-60c372daea22.jpeg);
+  background: linear-gradient(to left, #333, rgba(51, 51, 51, 0.6), #333), url(../img/house/photo-1507149833265-60c372daea22.jpeg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  font-family: "微軟正黑體"; }
+
+.container {
+  max-width: 1280px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.info_box {
+  width: calc(100%*4/12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh; }
+  @media (max-width: 768px) {
+    .info_box {
+      width: 100%;
+      text-align: center; } }
+  .info_box a {
+    margin-bottom: 40%; }
+    @media (max-width: 768px) {
+      .info_box a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10%; } }
+  .info_box .info {
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 0px 3px 6px #000; }
+    @media (max-width: 768px) {
+      .info_box .info {
+        width: 100%;
+        text-align: center; } }
+    .info_box .info .title {
+      font-weight: regular; }
+    .info_box .info p {
+      font-weight: light;
+      line-height: 1; }
+      @media (max-width: 768px) {
+        .info_box .info p {
+          width: 100%;
+          text-align: center;
+          font-size: 16px; } }
+
+.room_box {
+  width: calc(100%*8/12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh; }
+  @media (max-width: 768px) {
+    .room_box {
+      width: 100%;
+      text-align: center;
+      display: block; } }
+  .room_box .room_box_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .room_box .room_box_center .room_1 {
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/timpicturespace.appspot.com/o/room1.jpeg?alt=media&token=e69c7c9f-69bc-41da-975f-da4a024b8912); }
+    .room_box .room_box_center .room_2 {
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/timpicturespace.appspot.com/o/room2.jpeg?alt=media&token=34266662-60e2-4b5e-b2a3-d78d5f683b08); }
+    .room_box .room_box_center .room_3 {
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/timpicturespace.appspot.com/o/room3.jpeg?alt=media&token=2f603188-76b5-44d5-9431-2ea95d4a0601); }
+    .room_box .room_box_center .room_4 {
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/timpicturespace.appspot.com/o/room4.jpeg?alt=media&token=06fe6900-c98a-43a9-b61b-4d2adc921ab8); }
+    .room_box .room_box_center .room_5 {
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/timpicturespace.appspot.com/o/room5.jpeg?alt=media&token=4df74d6f-4549-4983-96d5-6f7ba183269c); }
+    .room_box .room_box_center .room_6 {
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/timpicturespace.appspot.com/o/room6.jpeg?alt=media&token=e416759b-dc76-4360-b23f-d1c0ccf2daf4); }
+    .room_box .room_box_center .room_1,
+    .room_box .room_box_center .room_2,
+    .room_box .room_box_center .room_3,
+    .room_box .room_box_center .room_4,
+    .room_box .room_box_center .room_5,
+    .room_box .room_box_center .room_6 {
+      width: 275px;
+      height: 275px;
+      text-align: center;
+      line-height: 275px;
+      background-size: cover;
+      background-position: center center; }
+      @media (max-width: 768px) {
+        .room_box .room_box_center .room_1,
+        .room_box .room_box_center .room_2,
+        .room_box .room_box_center .room_3,
+        .room_box .room_box_center .room_4,
+        .room_box .room_box_center .room_5,
+        .room_box .room_box_center .room_6 {
+          width: 100%;
+          text-align: center;
+          display: block; } }
+      .room_box .room_box_center .room_1 a,
+      .room_box .room_box_center .room_2 a,
+      .room_box .room_box_center .room_3 a,
+      .room_box .room_box_center .room_4 a,
+      .room_box .room_box_center .room_5 a,
+      .room_box .room_box_center .room_6 a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: transparent; }
+        .room_box .room_box_center .room_1 a:hover,
+        .room_box .room_box_center .room_2 a:hover,
+        .room_box .room_box_center .room_3 a:hover,
+        .room_box .room_box_center .room_4 a:hover,
+        .room_box .room_box_center .room_5 a:hover,
+        .room_box .room_box_center .room_6 a:hover {
+          color: #fff;
+          background-color: rgba(55, 70, 11, 0.6);
+          text-decoration: none; }

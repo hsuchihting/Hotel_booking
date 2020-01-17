@@ -1,0 +1,301 @@
+@import "_reset";
+@import "_boxsizing";
+@import "_fontsize";
+@import "_media";
+@import "_menu-position";
+
+
+body {
+  font-family: "微軟正黑體";
+
+}
+
+$primary-color:#38470B;
+
+.container {
+  max-width: 1280px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+//全域設定
+
+.room__price {
+  width: calc(100%*4/12);
+  background-image: url(https://images.unsplash.com/photo-1526880792616-4217886b9dc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+  background-size: cover;
+  background-position: center center;
+
+  @include pad {
+    width: 100%;
+    text-align: center;
+  }
+
+  .room__price__info {
+    margin-top: 25%;
+    padding-left: 10%;
+
+    a {
+      color: $primary-color;
+
+      @include pad {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .room__price__btn {
+    margin-top: 150%;
+    text-align: center;
+    color: $primary-color;
+
+    @include pad {
+      width: 100%;
+      text-align: center;
+      margin-top: 15%;
+      margin-bottom: 15%;
+    }
+
+    .price {
+      font-size: 36px;
+
+    }
+
+    span {
+      font-size: 20px;
+    }
+
+    .btn {
+      padding: 8.5px 59px;
+      margin-top: 20px;
+      background-color: $primary-color;
+      border: 1px solid $primary-color;
+
+      &:hover {
+        background: darken($primary-color, 10%) // 顏色變深的語法
+      }
+
+      p {
+        color: #fff;
+        font-size: 20px;
+      }
+
+    }
+  }
+}
+
+
+.room__content {
+  width: calc(100%*8/12);
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include pad {
+    width: 100%;
+    text-align: center;
+  }
+
+  .room__name {
+    display: inline-flex;
+
+    @include pad {
+      width: 100%;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 40px;
+      color: $primary-color;
+      padding-top: 107px;
+    }
+
+    p {
+      display: inline-block;
+      font-size: 14px;
+      color: $primary-color;
+      padding: 128px 50px 0 50px;
+
+      @include pad {
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+      }
+
+    }
+
+  }
+
+  .room__priceInfo {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 0;
+    padding-top: 30px;
+
+    @include pad {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .room__content__info {
+    padding-top: 30px;
+
+    li {
+      font-size: 14px;
+      color: $primary-color;
+      line-height: 1.8;
+    }
+  }
+
+  .room__iconInfo {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    color: $primary-color;
+
+    @include pad {
+      width: 100%;
+      text-align: center;
+    }
+
+    .icon {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      // 垂直排列
+      margin: 4% 4% 0 4%;
+      width: 40px;
+      // 設定固定寬度，讓 icon 不會因為內容寬度不同而有不同寬度。
+
+      img {
+        flex: auto;
+      }
+
+      p {
+        font-size: 10px;
+        color: $primary-color;
+        text-align: center;
+        font-size: 10px;
+        padding-top: 5px;
+      }
+
+      .fas {
+        position: absolute;
+        top: 0px;
+        right: -25px;
+        color: $primary-color;
+      }
+    }
+
+    .poolside,
+    .surface,
+    .kids,
+    .view,
+    .sofa {
+      filter: opacity(0.5);
+      // filter 濾鏡屬性
+      // http://blog.shihshih.com/css-filter/
+    }
+  }
+
+  .room__dateorder {
+    margin-top: 30px;
+
+    @include pad {
+      width: 100%;
+      text-align: center;
+    }
+
+    h3 {
+      color: $primary-color;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+  }
+
+  .room__calendar {
+    border: 1px solid $primary-color;
+    display: flex;
+
+    // 橫排並排
+    @include pad {
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin-bottom: 10%;
+    }
+
+    .room__calendar__left,
+    .room__calendar__right {
+      width: 100%;
+      max-width: 100%;
+      flex-direction: column;
+      // 使月曆直向排列
+      // 參考文章:https://wcc723.github.io/css/2017/07/21/css-flex/
+      padding: 2%;
+      flex-wrap: wrap;
+    }
+
+    .room__calendar__month {
+      display: flex;
+
+      .fas,
+      .month {
+        color: $primary-color;
+        font-size: 16px;
+
+      }
+
+      .month {
+        display: inline;
+        flex: auto;
+        // 相關文章參考 https://wcc723.github.io/css/2017/07/21/css-flex/
+        text-align: center;
+        font-weight: bold;
+
+      }
+    }
+
+    .room__calendar__table {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+
+      th {
+        padding: 3%;
+        color: #888888;
+        border-bottom: 1px solid #888;
+      }
+
+      td {
+        padding: 3%;
+        color: #cacaca;
+      }
+
+      .green {
+        color: $primary-color;
+        font-size: bold;
+      }
+    }
+  }
+}
+
+.beforeClick {
+  display: none;
+}
+
+//先隱藏 second container

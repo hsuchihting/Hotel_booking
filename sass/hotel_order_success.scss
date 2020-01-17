@@ -1,0 +1,80 @@
+@import "_reset.scss";
+@import "_boxsizing.scss";
+@import "_media.scss";
+
+$primary-color:#38470B;
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "微軟正黑體";
+}
+
+// layout
+
+.container {
+  max-width: 1280 px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.orderBg {
+  width: 1100px;
+  height: 600px;
+  margin: 84px auto;
+  background-color: $primary-color;
+  position: relative;
+
+  @include pad {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fas {
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .order_OK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    @include pad {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .text,
+  .title {
+    color: #fff;
+    margin-top: 3%;
+    text-align: center;
+
+    h2 {
+      font-size: 74px;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 100;
+    }
+  }
+
+}
