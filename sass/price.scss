@@ -175,7 +175,13 @@ a {
       // 垂直排列
       margin: 4% 4% 0 4%;
       width: 40px;
+
       // 設定固定寬度，讓 icon 不會因為內容寬度不同而有不同寬度。
+      @include phone {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5% 5% 0 5%;
+      }
 
       img {
         flex: auto;
@@ -221,6 +227,10 @@ a {
       font-weight: bold;
       margin-bottom: 10px;
       font-size: 18px;
+
+      @include pad {
+        font-size: 24px;
+      }
     }
 
   }
@@ -235,8 +245,27 @@ a {
     @include pad {
       width: 100%;
       text-align: center;
-      display: block;
-      margin-bottom: 10%;
+      display: flex;
+      // flex-wrap: wrap;
+      // justify-content: center;
+      margin-bottom: 5%;
+      border: none;
+    }
+
+    @include phone {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: center;
+      margin-bottom: 5%;
+      border: none;
+    }
+
+    .room__calendar__left {
+      @include pad {
+        margin-bottom: 3%;
+      }
     }
 
   }
@@ -244,6 +273,15 @@ a {
 
 .beforeClick {
   display: none;
+  .fa-times{
+    @include phone{
+      position: absolute;
+      top: 0px;
+      right: -5px;
+      color: $primary-color;
+    }
+  }
 }
+
 
 //先隱藏 second container

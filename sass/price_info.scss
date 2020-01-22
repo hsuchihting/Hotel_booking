@@ -117,6 +117,12 @@ a {
     display: block;
     cursor: pointer;
 
+    @include phone {
+      position: absolute;
+      top: 20px;
+      right: 5px;
+    }
+
   }
 
   .roomTitle {
@@ -156,18 +162,18 @@ a {
     flex-wrap: wrap;
     color: $primary-color;
 
-    @include pad {
-      width: 100%;
-      text-align: center;
-    }
-
     .icon {
       display: flex;
       flex-direction: column;
       // 垂直排列
       margin: 4% 3% 0 3%;
       width: 40px;
+      text-align: center;
+
       // 設定固定寬度，讓 icon 不會因為內容寬度不同而有不同寬度。
+      @include phone {
+        text-align: center;
+      }
 
 
       img {

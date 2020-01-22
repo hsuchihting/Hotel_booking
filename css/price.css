@@ -181,6 +181,14 @@ a {
       flex-direction: column;
       margin: 4% 4% 0 4%;
       width: 40px; }
+      @media (max-width: 375px) {
+        .room__content .room__iconInfo .icon {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          padding: 5% 5% 0 5%; } }
       .room__content .room__iconInfo .icon img {
         -webkit-box-flex: 1;
         -ms-flex: auto;
@@ -214,6 +222,9 @@ a {
       font-weight: bold;
       margin-bottom: 10px;
       font-size: 18px; }
+      @media (max-width: 768px) {
+        .room__content .room__dateorder h3 {
+          font-size: 24px; } }
   .room__content .room__calendar {
     border: 1px solid #38470B;
     display: -webkit-box;
@@ -226,8 +237,31 @@ a {
       .room__content .room__calendar {
         width: 100%;
         text-align: center;
-        display: block;
-        margin-bottom: 10%; } }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 5%;
+        border: none; } }
+    @media (max-width: 375px) {
+      .room__content .room__calendar {
+        width: 100%;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        border: none; } }
+    @media (max-width: 768px) {
+      .room__content .room__calendar .room__calendar__left {
+        margin-bottom: 3%; } }
 
 .beforeClick {
   display: none; }
+  @media (max-width: 375px) {
+    .beforeClick .fa-times {
+      position: absolute;
+      top: 0px;
+      right: -5px;
+      color: #38470B; } }

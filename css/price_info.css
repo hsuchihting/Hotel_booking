@@ -136,6 +136,11 @@ a {
     right: 38px;
     display: block;
     cursor: pointer; }
+    @media (max-width: 375px) {
+      .roomInfo .fa-times {
+        position: absolute;
+        top: 20px;
+        right: 5px; } }
   .roomInfo .roomTitle {
     font-family: Open Sans; }
     @media (max-width: 768px) {
@@ -164,10 +169,6 @@ a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     color: #38470B; }
-    @media (max-width: 768px) {
-      .roomInfo .roomIcons {
-        width: 100%;
-        text-align: center; } }
     .roomInfo .roomIcons .icon {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -177,7 +178,11 @@ a {
       -ms-flex-direction: column;
       flex-direction: column;
       margin: 4% 3% 0 3%;
-      width: 40px; }
+      width: 40px;
+      text-align: center; }
+      @media (max-width: 375px) {
+        .roomInfo .roomIcons .icon {
+          text-align: center; } }
       .roomInfo .roomIcons .icon img {
         -webkit-box-flex: 1;
         -ms-flex: auto;
