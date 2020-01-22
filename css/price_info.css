@@ -136,7 +136,7 @@ a {
     right: 38px;
     display: block;
     cursor: pointer; }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .roomInfo .fa-times {
         position: absolute;
         top: 20px;
@@ -180,7 +180,7 @@ a {
       margin: 4% 3% 0 3%;
       width: 40px;
       text-align: center; }
-      @media (max-width: 375px) {
+      @media (max-width: 414px) {
         .roomInfo .roomIcons .icon {
           text-align: center; } }
       .roomInfo .roomIcons .icon img {

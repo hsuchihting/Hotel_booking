@@ -142,7 +142,14 @@ a {
         .room__content .room__name p {
           width: 100%;
           text-align: left;
-          line-height: 1.5; } }
+          line-height: 1.5;
+          padding: 160px 5px 0 5px; } }
+      @media (max-width: 414px) {
+        .room__content .room__name p {
+          width: 100%;
+          text-align: left;
+          line-height: 1.5;
+          padding: 130px 5px 0 5px; } }
   .room__content .room__priceInfo {
     font-size: 14px;
     line-height: 1.5;
@@ -181,14 +188,14 @@ a {
       flex-direction: column;
       margin: 4% 4% 0 4%;
       width: 40px; }
-      @media (max-width: 375px) {
+      @media (max-width: 414px) {
         .room__content .room__iconInfo .icon {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-          padding: 5% 5% 0 5%; } }
+          padding: 4% 4% 0 4%; } }
       .room__content .room__iconInfo .icon img {
         -webkit-box-flex: 1;
         -ms-flex: auto;
@@ -242,7 +249,7 @@ a {
         display: flex;
         margin-bottom: 5%;
         border: none; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .room__content .room__calendar {
         width: 100%;
         text-align: center;
@@ -259,7 +266,7 @@ a {
 
 .beforeClick {
   display: none; }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .beforeClick .fa-times {
       position: absolute;
       top: 0px;

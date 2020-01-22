@@ -129,6 +129,13 @@ a {
         width: 100%;
         text-align: left;
         line-height: 1.5;
+        padding: 160px 5px 0 5px;
+      }
+      @include phone{
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+        padding: 130px 5px 0 5px;
       }
 
     }
@@ -180,7 +187,7 @@ a {
       @include phone {
         display: flex;
         flex-wrap: wrap;
-        padding: 5% 5% 0 5%;
+        padding: 4% 4% 0 4%;
       }
 
       img {
