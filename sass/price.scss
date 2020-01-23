@@ -181,7 +181,7 @@ a {
       flex-direction: column;
       // 垂直排列
       margin: 4% 4% 0 4%;
-      width: 40px;
+      // width: 40px;
 
       // 設定固定寬度，讓 icon 不會因為內容寬度不同而有不同寬度。
       @include phone {

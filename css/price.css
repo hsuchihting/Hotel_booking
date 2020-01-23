@@ -186,8 +186,7 @@ a {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      margin: 4% 4% 0 4%;
-      width: 40px; }
+      margin: 4% 4% 0 4%; }
       @media (max-width: 414px) {
         .room__content .room__iconInfo .icon {
           display: -webkit-box;
